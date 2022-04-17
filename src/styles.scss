@@ -1,1 +1,85 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Risque&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+:root {
+  --primary: #fa869b;
+  // --secondary: #71ceea;
+  // --tertiary: #f26d78;
+  // --text: #bcc5ca;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5%
+
+  @media only screen and (max-width: 64em) {
+    //Laptop
+    font-size: 48.3%;
+  }
+  @media only screen and (max-width: 48em) {
+    //Tablet L
+    font-size: 36.2%;
+  }
+  @media only screen and (max-width: 37.5em) {
+    //Tablet M
+    font-size: 28.2%;
+  }
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--primary);
+  // background-image: linear-gradient(to right bottom, red, blue);
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  color: #000;
+
+  a {
+    text-decoration: none;
+    color: #000;
+    transition: all 0.5s;
+
+    &:hover {
+      color: var(--primary);
+    }
+  }
+}
+
+.text {
+  color: #000;
+  font-size: 1.5rem;
+  padding: 0 5rem;
+
+  @media only screen and (max-width: 48em) {
+    //Tablet L
+    // margin: 1;
+    font-size: 2rem;
+  }
+}
+
+.h1 {
+  font-size: 3rem;
+  @media only screen and (max-width: 48em) {
+    //Tablet L
+    // margin: 1;
+    font-size: 5rem;
+  }
+}

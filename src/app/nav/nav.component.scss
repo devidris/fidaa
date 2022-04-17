@@ -1,0 +1,55 @@
+#main {
+  padding: 4rem 10rem;
+  padding-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  font-size: 4rem;
+  font-family: "Risque", cursive;
+  @media only screen and (max-width: 48em) {
+    //Tablet L
+    // margin: 0;
+    font-size: 6rem;
+  }
+}
+
+#info {
+  display: flex;
+  font-size: 1.5rem;
+
+  div {
+    padding: 2rem;
+  }
+}
+
+#sub {
+  background-color: var(--primary);
+  color: #fff;
+  padding: 1rem 0rem;
+
+  ul {
+    display: flex;
+    font-size: 1.5rem;
+    list-style: none;
+    border-top: 1px dashed #eee;
+    border-bottom: 1px dashed #eee;
+    padding: 0rem 7rem;
+  }
+
+  li {
+    padding: 1rem 2rem;
+    a {
+      text-decoration: none;
+      color: #fff;
+      transition: all 0.5s;
+      @media only screen and (max-width: 48em) {
+        //Tablet L
+        // margin: 0;
+        font-size: 2.3rem;
+      }
+    }
+  }
+}

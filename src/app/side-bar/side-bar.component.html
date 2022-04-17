@@ -1,0 +1,28 @@
+<div id="side-bar">
+  <div id="header">
+    <p *ngIf="collection">
+      الصفحة الرئيسية /
+      {{ collection.charAt(0).toUpperCase() + collection.slice(1) }}
+      <!-- {{
+        activeCollection.category.charAt(0).toUpperCase() +
+          activeCollection.category.slice(1)
+      }} -->
+    </p>
+    <hr />
+    <hr />
+    <h1>مجموعة</h1>
+    <hr />
+    <hr />
+  </div>
+  <div id="categories">
+    <ng-container *ngFor="let collection of collections">
+      <p (click)="changeCollection(collection.category)">
+        {{
+          collection.category.charAt(0).toUpperCase() +
+            collection.category.slice(1)
+        }}
+      </p>
+      <hr />
+    </ng-container>
+  </div>
+</div>

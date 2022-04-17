@@ -1,0 +1,13 @@
+.header {
+  display: flex;
+  justify-content: space-around;
+  a {
+    text-decoration: none;
+    color: #000;
+    transition: all 0.5s;
+
+    &:hover {
+      color: var(--primary);
+    }
+  }
+}

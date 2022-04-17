@@ -1,0 +1,51 @@
+#side-bar {
+  padding: 5rem;
+  text-align: center;
+  color: #000;
+}
+
+#categories {
+  text-align: left;
+  margin-top: 3rem;
+  cursor: pointer;
+
+  p {
+    padding-bottom: 0rem;
+    @media only screen and (max-width: 48em) {
+      //Tablet L
+      // margin: 0;
+      font-size: 2.1rem;
+    }
+  }
+}
+p {
+  padding: 0.5rem;
+  font-size: 1.3rem;
+  font-weight: 300;
+  transition: all 0.5s;
+  
+
+  @media only screen and (max-width: 48em) {
+    //Tablet L
+    // margin: 0;
+    font-size: 2.1rem;
+  }
+
+  &:hover {
+    color: var(--primary);
+  }
+}
+h1 {
+  padding: 1rem;
+  margin: 0;
+  font-size: 3rem;
+  @media only screen and (max-width: 48em) {
+    //Tablet L
+    // padding: 0;
+    font-size: 5rem;
+  }
+}
+
+hr {
+  margin: 0.2rem 0;
+}
